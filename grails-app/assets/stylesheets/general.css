@@ -1,0 +1,30 @@
+td, th{
+    text-align:center;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.table-spacing {
+    margin: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+}
+
+table.table-spacing td {
+    background-color: lime;
+    margin: 12px 12px 12px 12px;
+    padding: 12px 12px 12px 12px;
+}
+
+table.table-spacing {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+

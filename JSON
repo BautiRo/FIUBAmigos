@@ -1,0 +1,49 @@
+carreras {                  -> ing informatica
+    materias                -> 61.02
+}
+
+materias {                  -> 61.02 me traigo cursos
+        cursos
+}
+
+
+carreras {
+    materias { 
+        cursos
+    }
+}
+
+Ingenieria informatica { 
+    AM2 {
+        acero
+        zitto
+    }
+}
+
+
+Ingenieria{
+    codigo :x
+    codigo_de_materias: [ 61.02]
+
+}
+
+Materia {
+    codigo: 61.02
+    cursos: [
+        9342
+    ]
+}
+
+
+Curso {
+    codigo: 9342
+}
+
+
+data.materias.forEach(async function(materia, i) {
+  materia.cursos.forEach(async function(curso_codigo,j) {
+    data.materias[i].cursos[j] = data.cursos.filter(obj => {
+      return obj.codigo === curso_codigo
+    })
+  })
+})

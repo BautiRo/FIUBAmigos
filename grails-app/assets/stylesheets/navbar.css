@@ -1,0 +1,80 @@
+/**
+ * Mobster v1.0.0
+ * Copyright 2020 by MACode ID
+ * Site: www.macodeid.com
+ * License under CC 4.0 ()
+ */
+
+:root {
+    --primary: #3D58F3;
+    --secondary: #A52EFF;
+    --success: #0ABF9E;
+    --warning: #E89E09;
+    --info: #4699F8;
+    --danger: #F13057;
+    --indigo: #602FDA;
+    --dark: #989898;
+    --light: #F0EEF5;
+    --gray: #6b6872;
+    --white: #fff;
+    --font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    --line-height: 1.7;
+
+}
+
+/* Navbar */
+.navbar-floating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.navbar-expand-lg.navbar-floating.navbar-light {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(56, 51, 64, 0.1);
+}
+
+.navbar-expand-lg.navbar-floating.navbar-dark {
+    background-color: #585858;
+    box-shadow: 0 1px 6px rgba(56, 51, 64, 0.1);
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg.navbar-floating {
+        top: 0px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar-expand-lg.navbar-floating.navbar-light {
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .navbar-expand-lg.navbar-floating.navbar-dark {
+        background-color: #303030;
+        box-shadow: none;
+    }
+}
+
+
+
+.mobile-preview {
+    width: 100%;
+    max-width: 233px;
+    height: auto;
+    border-radius: 30px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
